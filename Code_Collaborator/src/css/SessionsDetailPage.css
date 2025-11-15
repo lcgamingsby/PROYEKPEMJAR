@@ -1,0 +1,61 @@
+.session-detail-container {
+  width: 100%;
+  height: 100vh;
+  background: #111;
+  color: white;
+}
+
+.session-two-col {
+  display: flex;
+  height: 100%;
+}
+
+/* Left code editor panel */
+.code-panel {
+  flex: 1;
+  background: #1a1a1a;
+  border-right: 2px solid #222;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Right output panel */
+.output-panel {
+  flex: 1;
+  background: #0f0f0f;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel-header {
+  padding: 10px 15px;
+  background: #222;
+  border-bottom: 1px solid #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.run-btn {
+  background: #28a745;
+  border: none;
+  padding: 6px 12px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.run-btn:hover {
+  background: #23913d;
+}
+
+.output-box {
+  flex: 1;
+  overflow-y: auto;
+  padding: 15px;
+  color: #0f0;
+  font-size: 14px;
+  background: #0b0b0b;
+  white-space: pre-wrap;
+}

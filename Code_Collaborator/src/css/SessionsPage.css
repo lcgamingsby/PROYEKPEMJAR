@@ -1,0 +1,133 @@
+.sessions-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;   /* Tengah Horizontal */
+  align-items: flex-start;   /* Tidak di tengah vertikal */
+  padding-top: 3rem;         /* Jarak dari atas */
+  background-color: #f9fafb;
+  box-sizing: border-box;
+}
+
+
+.sessions-content {
+  background: white;
+  width: 100%;
+  max-width: 700px;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+
+
+.sessions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.sessions-header h1 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.new-session-btn {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.new-session-btn:hover {
+  background-color: #1e40af;
+}
+
+.session-card {
+  background: #f9fafb;
+  padding: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease, transform 0.1s ease;
+}
+
+.session-card:hover {
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.session-name {
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.session-status {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+
+.join-toggle-btn {
+  margin-top: 15px;
+  padding: 10px 14px;
+  background: #1d3557;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.join-toggle-btn:hover {
+  background: #457b9d;
+}
+
+.join-box {
+  margin-top: 15px;
+  background: #f1f1f1;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  gap: 10px;
+  animation: fadeIn 0.2s ease;
+}
+
+.join-box input {
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.join-box button {
+  padding: 8px 14px;
+  background: #457b9d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.join-box button:hover {
+  background: #1d3557;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
